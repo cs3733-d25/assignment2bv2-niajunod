@@ -1,76 +1,47 @@
-/*!* Top Menu Bar *!*/
-/*.topnav {*/
-/*    overflow: hidden;*/
-/*    background-color: #333;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-
-/*    ul {*/
-/*        display: flex;*/
-/*        flex-direction: row;*/
-/*        list-style-type: none;*/
-/*        max-width: 800px;*/
-/*        padding: 0;*/
-/*        margin: auto;*/
-
-/*        li {*/
-/*            float: left;*/
-/*        }*/
-/*    }*/
-/*}*/
-
-/*!* Links inside the topnav *!*/
-/*.topnav a {*/
-/*    float: left;*/
-/*    display: block;*/
-/*    color: #f2f2f2;*/
-/*    text-align: left;*/
-/*    padding: 14px 16px;*/
-/*    text-decoration: none;*/
-/*}*/
-
-/*!* Change color on hover *!*/
-/*.topnav a:hover {*/
-/*    background-color: #ddd;*/
-/*    color: black;*/
-/*    transition: background-color 0.3s, color 0.3s; !* Smooth transition *!*/
-/*}*/
-
 /* Body Background and Text Colors */
 .content {
-    background-color: #f0f0f0; /* Light grey background */
-    color: #333; /* Dark text color */
-    padding: 20px; /* Padding for content */
-    margin: 0 auto; /* Center the content */
-    max-width: 800px; /* Maximum width of the content area */
+    /* background-color: #f0f0f0; */
+    color: #333; 
+    padding: 20px;
+    margin: 0 auto;
+    /* max-width: 800px; */
 }
 
 /* Heading Styles */
 .heading {
-    color: #2c3e50; /* Dark blue color for headings */
-    font-family: 'Arial', sans-serif; /* Different font for headings */
+    color: #2c3e50; 
+    font-family: 'Arial', sans-serif; 
 }
 
 /* First Item Style */
 .first-item {
-    color: #e74c3c; /* Red color for the first item */
+    color: #e74c3c; 
 }
 
 /* Table Style */
 .collapse {
-    border-collapse: collapse; /* Collapsed borders */
-    width: 80%; /* Full width */
+    border-collapse: collapse;
+    width: 80%;
     margin: 2rem auto;
 
     th, td {
-        border: 1px solid black; /* Visible border */
-        padding: 8px; /* Padding for table cells */
-        text-align: left; /* Left align text */
+        border: 1px solid black;
+        padding: 8px; 
+        text-align: left;
     }
 
     th {
-        background-color: #f2f2f2; /* Light grey background for headers */
-        font-weight: bold; /* Bold text for headers */
+        background-color: #CBC3E3;
+        font-weight: bold;
+    }
+
+    tr {
+        &:nth-child(even) {
+            background-color: #f9f9f9; /* Light gray for even rows */
+        }
+        &:nth-child(odd) {
+            background-color: #fff; /* White for odd rows */
+        }
     }
 
     caption {
