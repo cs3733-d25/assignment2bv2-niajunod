@@ -29,7 +29,7 @@ const Hobby1: React.FC = () => {
             <h1>Nia Junod - Working Out at the Gym</h1>
 
             {/* Banner Image */}
-            <img src="/Gym.jpg" alt="Gym Workout Banner" width="2300" />
+            <img src="/src/assets/Gym.jpg" alt="Gym Workout Banner" width="2300" />
             <p><strong>Equinox Gym</strong></p>
 
             {/* Introduction */}
