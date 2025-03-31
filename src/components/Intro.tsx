@@ -1,13 +1,18 @@
 import React from "react";
 import "../App.css"; // Ensure this CSS file exists for styling
 
-const Intro: React.FC = () => {
+type IntroProps = {
+    name1: string;
+    name2: string;
+}
+
+const Intro: React.FC<IntroProps> = ({name1, name2}) => {
 
     return (
         <div className="intro-container">
             {/* Title */}
             <p>
-                Welcome to our website! We are Alden and Nia, two students at WPI who are passionate about soccer and working out at the gym.
+                Welcome to our website! We are {name1} and {name2}, two students at WPI who are passionate about soccer and working out at the gym.
                 We created this website to share our interests with you and provide information on the benefits of these hobbies.
             </p>
             <p>

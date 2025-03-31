@@ -1,7 +1,4 @@
 import { useState, useEffect } from "react";
-import { Todo } from "./types.ts";
-import { TodoList } from "./components/TodoList.tsx";
-import { TodoForm } from "./components/TodoForm.tsx";
 import Title from "./components/Title";
 import Intro from "./components/Intro";
 import Hobby1 from "./components/hobby1.tsx";
@@ -9,30 +6,8 @@ import Hobby2 from "./components/hobby2.tsx";
 import "./App.css";
 
 export default function App() {
-    const [todos, setTodos] = useState<Todo[]>([]);
     const [currentTime, setCurrentTime] = useState<string>("");
     const [currentDate, setCurrentDate] = useState<string>("");
-
-    function onAdd(description: string) {
-        const newTodo: Todo = {
-            id: Date.now(),
-            description: description,
-            completed: false,
-        };
-        setTodos([...todos, newTodo]);
-    }
-
-    function handleDelete(id: number) {
-        setTodos((prevState) => prevState.filter((todo) => todo.id !== id));
-    }
-
-    function handleToggle(id: number) {
-        setTodos((prevState) =>
-            prevState.map((todo) =>
-                todo.id === id ? { ...todo, completed: !todo.completed } : todo
-            )
-        );
-    }
 
     function updateTime() {
         const now = new Date();
@@ -60,7 +35,7 @@ export default function App() {
     return (
         <div className="app">
             <Title />
-            <Intro />
+            <Intro name1={"Nia"} name2={"Alden"}/>
             <p className="date">Today's Date: {currentDate}</p>
             <p className="time">Current Time: {currentTime}</p>
             <Hobby1 />
