@@ -4,6 +4,7 @@ import "./Alden.css"; // Ensure this CSS file exists for styling
 const Hobby2: React.FC = () => {
     return (
         <div className="content">
+
             <h1>Alden Cutler - Soccer as a hobby</h1>
             <img src="/src/assets/sounders.png"
                  alt="Sounders supporters"/>

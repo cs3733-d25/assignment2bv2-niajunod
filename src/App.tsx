@@ -61,11 +61,8 @@ export default function App() {
         <div className="app">
             <Title />
             <Intro />
-            <h2 className="section-title">To-Do List</h2>
             <p className="date">Today's Date: {currentDate}</p>
             <p className="time">Current Time: {currentTime}</p>
-            <TodoForm onAdd={onAdd} />
-            <TodoList onDelete={handleDelete} onToggle={handleToggle} todos={todos} />
             <Hobby1 />
             <Hobby2 />
         </div>

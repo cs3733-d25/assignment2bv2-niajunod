@@ -1,29 +1,9 @@
 import React from "react";
-import "../App.css"; // Ensure this CSS file exists for styling
+import "./Nia.css"; // Ensure this CSS file exists for styling
 
 const Hobby1: React.FC = () => {
     return (
         <div className="hobby-container">
-            {/* Navigation */}
-            <nav className="navbar">
-                <ul className="nav-links">
-                    <li>
-                        <a href="https://www.healthline.com/health/fitness-exercise/elliptical-benefits" target="_blank">
-                            Elliptical
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.vogue.com/article/all-the-benefits-of-strength-training-for-women" target="_blank">
-                            Women Lifting
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.forbes.com/sites/bernardmarr/2023/04/05/fit-for-the-future-10-trends-that-will-transform-the-fitness-industry/" target="_blank">
-                            Future Fitness
-                        </a>
-                    </li>
-                </ul>
-            </nav>
 
             {/* Title */}
             <h1>Nia Junod - Working Out at the Gym</h1>
@@ -76,7 +56,7 @@ const Hobby1: React.FC = () => {
 
             {/* Workout Schedule Table */}
             <h2>My Weekly Workout Schedule</h2>
-            <table className="schedule-table">
+            <table className={"collapse"}>
                 <caption>Schedule</caption>
                 <thead>
                 <tr>
